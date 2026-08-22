@@ -1,6 +1,6 @@
 cask "insta-dl-gui" do
-  version "0.1.1"
-  sha256 "3587174bf17037e366c69cbd6c893dde5fc0d9ae75656ac4933eb02bca42e1e6"
+  version "0.1.2"
+  sha256 "c93ad7cb37fa0bda3ee3dfcf556876344feab848ccc5d32c10fc94b6b57d5c56"
 
   url "https://github.com/subzeroid/insta-dl-gui/releases/download/v#{version}/insta-dl-gui_#{version}_universal.dmg"
   name "insta-dl-gui"
@@ -12,6 +12,7 @@ cask "insta-dl-gui" do
     strategy :github_latest
   end
 
+  depends_on :macos
 
   app "insta-dl-gui.app"
 
