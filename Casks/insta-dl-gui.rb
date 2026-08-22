@@ -12,7 +12,6 @@ cask "insta-dl-gui" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :high_sierra"
 
   app "insta-dl-gui.app"
 
