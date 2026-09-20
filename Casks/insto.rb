@@ -33,8 +33,9 @@ cask "insto" do
   ]
 
   caveats <<~EOS
-    insto is ad-hoc signed and not notarized. Install with --no-quarantine, or
-    open it once and allow it under System Settings → Privacy & Security.
+    insto is ad-hoc signed and not notarized. Open it once and allow it under
+    System Settings → Privacy & Security, or check the DMG hash and run
+    `xattr -dr com.apple.quarantine /Applications/insto.app`.
     The background monitoring service keeps running after you quit or uninstall
     the app; it runs from a private runtime, not from the app bundle. Disable it
     from inside the app before `brew uninstall --zap`, which removes that runtime
