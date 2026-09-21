@@ -1,13 +1,13 @@
 cask "insto" do
-  version "0.1.2"
+  version "0.1.3"
 
   on_arm do
-    sha256 "962e8638a80668ab67bc8e11d4f01e3cc0180dd7456e2838f87f20ac5845de4d"
+    sha256 "9321ac5124bd324af2a696f2da86a0fa0c6728f1511b809e39968a4a84814d68"
 
     url "https://github.com/subzeroid/insto-gui/releases/download/v#{version}/insto_#{version}_aarch64.dmg"
   end
   on_intel do
-    sha256 "55e3d372811e004092fdfe6e5c073fa67f13c007e0b80e6581afd05e90787543"
+    sha256 "dfc79b31311665cff3977ca1481e8cd8e2e9adeab1f4bf0824df3b85db66a88c"
 
     url "https://github.com/subzeroid/insto-gui/releases/download/v#{version}/insto_#{version}_x64.dmg"
   end
